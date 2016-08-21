@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasicEncodingRules.h"
 
 //! Project version number for JWTTools.
 FOUNDATION_EXPORT double JWTToolsVersionNumber;

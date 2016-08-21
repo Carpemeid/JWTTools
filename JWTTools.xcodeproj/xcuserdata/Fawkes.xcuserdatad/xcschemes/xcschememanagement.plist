@@ -9,6 +9,26 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ObjectiveCDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Resources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>SwiftDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>TestingResources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +38,26 @@
 			<true/>
 		</dict>
 		<key>3C2B62EB1D6A232A009A1B41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C2B62FF1D6A2390009A1B41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C2B63151D6A239D009A1B41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C2B63301D6A23F8009A1B41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C2B633D1D6A2F2B009A1B41</key>
 		<dict>
 			<key>primary</key>
 			<true/>

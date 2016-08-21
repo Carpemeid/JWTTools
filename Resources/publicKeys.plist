@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>idToken</key>
+	<string>eyJhbGciOiJSUzI1NiIsImtpZCI6IlBIUE9QLTAwIn0.eyJpc3MiOiJodHRwczpcL1wvcmVmZXJlbmNlLm1vYmlsZWNvbm5lY3QuaW9cL21vYmlsZWNvbm5lY3QiLCJzdWIiOiIxNThFNUJBMS1FRDYxLTc2RUQtRDdFMC1DMDg2MjlDRDQwMUMiLCJhdWQiOlsieC1aV1JoTmpVM09XSTNNR0l3WVRSaCJdLCJleHAiOjE0NzE4MDc3OTEsImlhdCI6MTQ3MTgwNzQ5MSwibm9uY2UiOiJDQzQwQ0NBMzJDNjc0NzgzQkRGRTk2Mjc0REQxQkE3QiIsImF0X2hhc2giOiJvdEZWUko0OEFUbllpN3lwUGhaU2xBIiwiYXV0aF90aW1lIjoxNDcxODA3NDkxLCJhY3IiOiIyIiwiYW1yIjpbIlNJTV9QSU4iXSwiYXpwIjoieC1aV1JoTmpVM09XSTNNR0l3WVRSaCJ9.kWa7HmtkIn4dZ5Y9KpPpWtiJ1Ek3NQtSiCX1I3C5ZZqEkDEbMVQCBtOC8TzPJmVeZChz0SgvTzUWacgp36lUhWh5JBpMrtWefInl8nx0hi7OhtY4wTh7bePtd3vFkRrbdp6vF5v1XWGbHDUWcRHZRvWOSt1FDWWtauknlywbAEA</string>
+	<key>publicKeys</key>
+	<array>
+		<dict>
+			<key>e</key>
+			<string>AQAB</string>
+			<key>kid</key>
+			<string>PHPOP-00</string>
+			<key>kty</key>
+			<string>RSA</string>
+			<key>n</key>
+			<string>ALyIC8vj1tqEIvAvpDMQfgosw13LpBS9Z2lsMmuaLDNJjN_FKIb-HVR2qtMj7AYC0-wYJhGxJpTXJTVRRDz-zLN7uredNxuhVj76vmU1tfvEN0Xq2INYoWeJ3d9fZtkBgKl7Enfkgz858DLAfZuJzDycOzuZXR5r29zXMDstT5F5</string>
+			<key>use</key>
+			<string>sig</string>
+		</dict>
+	</array>
+</dict>
+</plist>
