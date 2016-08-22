@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/Carpemeid/JWTTools.git", :branch => 'master', :tag => "#{spec.version}"}
 
-  s.source_files  = "JWTTools", "JWTTools/*.{swift,plist,h,m}"
+  #s.source_files  = "JWTTools", "JWTTools/*.{swift,plist,h,m}"
 
   s.framework  = "SwiftyRSA"
   s.requires_arc = true
