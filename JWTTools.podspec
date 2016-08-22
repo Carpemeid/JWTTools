@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name         = "JWTTools"
   s.version      = "1.0"
   s.summary      = "JWTTools allows verifying and getting the payload of JWT tokens"
-
+  s.homepage = "https://github.com/Carpemeid/JWTTools"
   s.license      = { type: 'MIT', file: 'Metadata/LICENSE' }
 
   s.author             = { "Carpemeid" => "andonidan@yahoo.com" }
