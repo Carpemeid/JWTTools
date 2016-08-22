@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license      = { type: 'MIT', file: 'Metadata/LICENSE' }
 
   s.author             = { "Carpemeid" => "andonidan@yahoo.com" }
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "8.3"
 
   s.source       = { :git => "https://github.com/Carpemeid/JWTTools.git", :branch => 'master', :tag => "#{spec.version}"}
 
