@@ -20,3 +20,4 @@ DerivedData/
 #custom & CocoaPods
 Podfile.lock
 Pods/
+DerivedData/
