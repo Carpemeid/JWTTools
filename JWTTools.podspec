@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JWTTools"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "JWTTools allows verifying and getting the payload of JWT tokens"
   s.homepage = "https://github.com/Carpemeid/JWTTools"
   s.license      = { type: 'MIT', file: 'Metadata/LICENSE' }
