@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency "SwiftyRSA", "~> 0.4"
+  s.dependency 'SwiftyRSA', '~> 0.4'
 
 end
