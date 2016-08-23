@@ -22,10 +22,6 @@ public class JWTManager : NSObject
     
     public func verifyWithPublicKey(publicKey : PublicKey, digestMethod : SwiftyRSA.DigestType = SwiftyRSA.DigestType.SHA256) throws -> Bool
     {
-        let dataSignature : NSData? = (decoder.signature ?? "").dataUsingEncoding(NSUTF8StringEncoding)
-        
-        let base64Signature : String? = dataSignature?.base64EncodedStringWithOptions([])
-        
-        return try SwiftyRSA.verifySignatureString(decoder.correctedDataComponent ?? "", signature: base64Signature ?? "", publicKeyPEM: publicKey.pemString, digestMethod: digestMethod).boolValue
+        return try SwiftyRSA.verifySignatureString(decoder.dataComponent ?? "", signature: decoder.signature ?? "", publicKeyPEM: publicKey.pemString, digestMethod: digestMethod).boolValue
     }
 }

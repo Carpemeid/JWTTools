@@ -4,7 +4,7 @@
 target 'JWTTools' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  "SwiftyRSA", "~> 0.4"
+  pod 'SwiftyRSA', '~> 0.4'
   # Pods for JWTTools
 
   target 'JWTToolsTests' do
@@ -17,7 +17,7 @@ end
 target 'ObjectiveCDemo' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'SwiftyRSA', '~> 0.4'
   # Pods for ObjectiveCDemo
 
 end
@@ -33,7 +33,7 @@ end
 target 'SwiftDemo' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'SwiftyRSA'
+  pod 'SwiftyRSA' , '~> 0.4'
   # Pods for SwiftDemo
 
 end

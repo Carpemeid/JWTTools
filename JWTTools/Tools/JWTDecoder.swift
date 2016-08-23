@@ -36,37 +36,17 @@ private let kSignatureComponentIndex : Int = 2
     
     public var decodedValue : NSData?
     {
-        guard let correctedDataComponent = correctedDataComponent else
-        {
-            return nil
-        }
-        
-        return NSData(base64EncodedString: correctedDataComponent, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
-    }
-    
-    var correctedDataComponent : String?
-    {
-        guard let dataComponent = dataComponent else
-        {
-            return nil
-        }
-        
-        let characterOffset : Int = 4 - dataComponent.characters.count % 4
-        let charactersToAdd : Int = characterOffset > 3 ? 0 : characterOffset
-        
-        let paddedStringToAdd : String = "".stringByPaddingToLength(charactersToAdd, withString: "=", startingAtIndex: 0)
-        
-        return dataComponent.stringByAppendingString(paddedStringToAdd)
+        return NSData(base64EncodedString: dataComponent?.convertFromBase64URLToBase64() ?? "", options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
     }
     
     var signature : String?
     {
-        return componentAtIndex(kSignatureComponentIndex)
+        return componentAtIndex(kSignatureComponentIndex)?.convertFromBase64URLToBase64()
     }
     
     var dataComponent : String?
     {
-        return componentAtIndex(kDataComponentIndex)
+        return componentAtIndex(kDataComponentIndex)?.convertFromBase64URLToBase64()
     }
     
     func componentAtIndex(index : Int) -> String?
