@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "JWTTools"
-s.version      = "1.1"
+s.version      = "1.2"
 s.summary      = "JWTTools allows verifying and getting the payload of JWT tokens"
 s.homepage = "https://github.com/Carpemeid/JWTTools"
 s.license      = { type: 'MIT', file: 'Metadata/LICENSE' }
@@ -13,10 +13,10 @@ s.source       = { :git => "https://github.com/Carpemeid/JWTTools.git", :branch 
 
 s.source_files  = "JWTTools", "JWTTools/**/*.{swift,plist,h,m}"
 
-s.framework  = "SwiftyRSA"
+s.framework  = "Heimdall"
 
 s.requires_arc = true
 
-s.dependency 'SwiftyRSA', '~> 0.4'
+s.dependency 'Heimdall', '~> 1.0'
 
 end
