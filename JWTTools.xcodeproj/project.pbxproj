@@ -28,19 +28,14 @@
 		3C2B634F1D6A36FF009A1B41 /* ResourcesDeposit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B634E1D6A36FF009A1B41 /* ResourcesDeposit.swift */; };
 		3C2B63511D6A4E8E009A1B41 /* JWTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B63501D6A4E8E009A1B41 /* JWTManager.swift */; };
 		3C2B63541D6A4EF3009A1B41 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B63531D6A4EF3009A1B41 /* PublicKey.swift */; };
-		3C2B635A1D6A569D009A1B41 /* BasicEncodingRules.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2B63561D6A569D009A1B41 /* BasicEncodingRules.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C2B635B1D6A569D009A1B41 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B63571D6A569D009A1B41 /* BasicEncodingRules.m */; };
-		3C2B635C1D6A569D009A1B41 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2B63581D6A569D009A1B41 /* NSData+Base64.h */; };
-		3C2B635D1D6A569D009A1B41 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B63591D6A569D009A1B41 /* NSData+Base64.m */; };
 		3C2B635E1D6A5966009A1B41 /* JWTTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2B62E21D6A232A009A1B41 /* JWTTools.framework */; };
 		3C2B635F1D6A5989009A1B41 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2B633E1D6A2F2B009A1B41 /* Resources.framework */; };
-		3C2B63611D6A5E73009A1B41 /* SwiftyRSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2B63601D6A5E73009A1B41 /* SwiftyRSA.framework */; };
-		3C2B63681D6A5F7E009A1B41 /* NSDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B63671D6A5F7E009A1B41 /* NSDataExtension.swift */; };
 		3C2B636A1D6A63B7009A1B41 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B63691D6A63B7009A1B41 /* StringExtension.swift */; };
-		3C2B636C1D6A643E009A1B41 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B636B1D6A643E009A1B41 /* ArrayExtension.swift */; };
 		3C2B636E1D6A6EA0009A1B41 /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B636D1D6A6EA0009A1B41 /* JWTDecoder.swift */; };
 		752754F7F9BA6819D7E954DC /* Pods_JWTToolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6F034E7506334CCDC9BD9B /* Pods_JWTToolsTests.framework */; };
 		9C4E62F52352E4209E1BA047 /* Pods_JWTTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749F205A072D3C221849ED56 /* Pods_JWTTools.framework */; };
+		A6A8D1031D6E08E80071661D /* Heimdall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A8D1021D6E08E80071661D /* Heimdall.framework */; };
+		A6A8D1051D6E0BBF0071661D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A8D1041D6E0BBF0071661D /* Constants.swift */; };
 		DF1713A6546F9AA71B405C4C /* Pods_ObjectiveCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F746C2EEEACBE01F643CCE3B /* Pods_ObjectiveCDemo.framework */; };
 		E4D89ED777951471C252BD70 /* Pods_Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24BF78F90C3CDD726B0CBB8 /* Pods_Resources.framework */; };
 /* End PBXBuildFile section */
@@ -89,20 +84,15 @@
 		3C2B634E1D6A36FF009A1B41 /* ResourcesDeposit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesDeposit.swift; sourceTree = "<group>"; };
 		3C2B63501D6A4E8E009A1B41 /* JWTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTManager.swift; sourceTree = "<group>"; };
 		3C2B63531D6A4EF3009A1B41 /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
-		3C2B63561D6A569D009A1B41 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
-		3C2B63571D6A569D009A1B41 /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicEncodingRules.m; sourceTree = "<group>"; };
-		3C2B63581D6A569D009A1B41 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		3C2B63591D6A569D009A1B41 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		3C2B63601D6A5E73009A1B41 /* SwiftyRSA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyRSA.framework; path = "DerivedData/JWTTools/Build/Products/Debug-iphonesimulator/SwiftyRSA/SwiftyRSA.framework"; sourceTree = "<group>"; };
-		3C2B63671D6A5F7E009A1B41 /* NSDataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataExtension.swift; sourceTree = "<group>"; };
 		3C2B63691D6A63B7009A1B41 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		3C2B636B1D6A643E009A1B41 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		3C2B636D1D6A6EA0009A1B41 /* JWTDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
 		57D99AA5EB5E67CB74F30613 /* Pods-JWTToolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWTToolsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWTToolsTests/Pods-JWTToolsTests.release.xcconfig"; sourceTree = "<group>"; };
 		749F205A072D3C221849ED56 /* Pods_JWTTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWTTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E9392E12A12BA7CB0A4039C /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8C28893643AD4651BEB84096 /* Pods-Resources.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resources.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Resources/Pods-Resources.debug.xcconfig"; sourceTree = "<group>"; };
 		8C6F034E7506334CCDC9BD9B /* Pods_JWTToolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWTToolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A8D1021D6E08E80071661D /* Heimdall.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Heimdall.framework; path = "DerivedData/JWTTools/Build/Products/Debug-iphonesimulator/Heimdall/Heimdall.framework"; sourceTree = "<group>"; };
+		A6A8D1041D6E0BBF0071661D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AF1F2A59633F7D13E311567E /* Pods-JWTTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWTTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWTTools/Pods-JWTTools.release.xcconfig"; sourceTree = "<group>"; };
 		B24BC5CD71829E37B37CD7E1 /* Pods-JWTTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWTTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWTTools/Pods-JWTTools.debug.xcconfig"; sourceTree = "<group>"; };
 		BCA3EE17FC3F3015450AE248 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C2B63611D6A5E73009A1B41 /* SwiftyRSA.framework in Frameworks */,
+				A6A8D1031D6E08E80071661D /* Heimdall.framework in Frameworks */,
 				3C2B634D1D6A36ED009A1B41 /* Resources.framework in Frameworks */,
 				9C4E62F52352E4209E1BA047 /* Pods_JWTTools.framework in Frameworks */,
 			);
@@ -213,6 +203,7 @@
 				3C2B62E51D6A232A009A1B41 /* JWTTools.h */,
 				3C2B62E71D6A232A009A1B41 /* Info.plist */,
 				3C2B63501D6A4E8E009A1B41 /* JWTManager.swift */,
+				A6A8D1041D6E0BBF0071661D /* Constants.swift */,
 			);
 			path = JWTTools;
 			sourceTree = "<group>";
@@ -285,10 +276,6 @@
 		3C2B63551D6A55D0009A1B41 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				3C2B63561D6A569D009A1B41 /* BasicEncodingRules.h */,
-				3C2B63571D6A569D009A1B41 /* BasicEncodingRules.m */,
-				3C2B63581D6A569D009A1B41 /* NSData+Base64.h */,
-				3C2B63591D6A569D009A1B41 /* NSData+Base64.m */,
 				3C2B636D1D6A6EA0009A1B41 /* JWTDecoder.swift */,
 			);
 			path = Tools;
@@ -297,9 +284,7 @@
 		3C2B63621D6A5F18009A1B41 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3C2B63671D6A5F7E009A1B41 /* NSDataExtension.swift */,
 				3C2B63691D6A63B7009A1B41 /* StringExtension.swift */,
-				3C2B636B1D6A643E009A1B41 /* ArrayExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -307,7 +292,7 @@
 		FBA30C410E29377C8E7921B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C2B63601D6A5E73009A1B41 /* SwiftyRSA.framework */,
+				A6A8D1021D6E08E80071661D /* Heimdall.framework */,
 				749F205A072D3C221849ED56 /* Pods_JWTTools.framework */,
 				8C6F034E7506334CCDC9BD9B /* Pods_JWTToolsTests.framework */,
 				F746C2EEEACBE01F643CCE3B /* Pods_ObjectiveCDemo.framework */,
@@ -324,10 +309,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C2B635C1D6A569D009A1B41 /* NSData+Base64.h in Headers */,
 				3C2B63411D6A2F2B009A1B41 /* Resources.h in Headers */,
 				3C2B62E61D6A232A009A1B41 /* JWTTools.h in Headers */,
-				3C2B635A1D6A569D009A1B41 /* BasicEncodingRules.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,11 +722,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C2B635B1D6A569D009A1B41 /* BasicEncodingRules.m in Sources */,
-				3C2B63681D6A5F7E009A1B41 /* NSDataExtension.swift in Sources */,
+				A6A8D1051D6E0BBF0071661D /* Constants.swift in Sources */,
 				3C2B636A1D6A63B7009A1B41 /* StringExtension.swift in Sources */,
-				3C2B635D1D6A569D009A1B41 /* NSData+Base64.m in Sources */,
-				3C2B636C1D6A643E009A1B41 /* ArrayExtension.swift in Sources */,
 				3C2B63541D6A4EF3009A1B41 /* PublicKey.swift in Sources */,
 				3C2B636E1D6A6EA0009A1B41 /* JWTDecoder.swift in Sources */,
 				3C2B63511D6A4E8E009A1B41 /* JWTManager.swift in Sources */,
@@ -934,6 +914,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DerivedData/JWTTools/Build/Products/Debug-iphonesimulator/SwiftyRSA",
+					"$(PROJECT_DIR)/DerivedData/JWTTools/Build/Products/Debug-iphonesimulator/Heimdall",
 				);
 				INFOPLIST_FILE = JWTTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -957,6 +938,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DerivedData/JWTTools/Build/Products/Debug-iphonesimulator/SwiftyRSA",
+					"$(PROJECT_DIR)/DerivedData/JWTTools/Build/Products/Debug-iphonesimulator/Heimdall",
 				);
 				INFOPLIST_FILE = JWTTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

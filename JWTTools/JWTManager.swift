@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import SwiftyRSA
+import Heimdall
+
 
 public class JWTManager : NSObject
 {
@@ -20,8 +21,23 @@ public class JWTManager : NSObject
         super.init()
     }
     
-    public func verifyWithPublicKey(publicKey : PublicKey, digestMethod : SwiftyRSA.DigestType = SwiftyRSA.DigestType.SHA256) throws -> Bool
+    public func verifyWithPublicKey(publicKey : PublicKey) throws -> Bool
     {
-        return try SwiftyRSA.verifySignatureString(decoder.dataComponent ?? "", signature: decoder.signature ?? "", publicKeyPEM: publicKey.pemString, digestMethod: digestMethod).boolValue
+        guard let modulusData = publicKey.modulusData, exponentData = publicKey.exponentData else
+        {
+            throw JWTErrorCode.InvalidPublicKey.error
+        }
+        
+        guard let message = decoder.message, signature = decoder.signature else
+        {
+            throw JWTErrorCode.InvalidToken.error
+        }
+        
+        guard let verifier = Heimdall(publicTag: kJWTToolsTag, publicKeyModulus: modulusData, publicKeyExponent: exponentData) else
+        {
+            throw JWTErrorCode.Unknown.error
+        }
+        
+        return verifier.verify(message, signatureBase64: signature, urlEncoded: true)
     }
 }

@@ -24,9 +24,4 @@ extension String
         
         return stringByAppendingString(paddedStringToAdd)
     }
-    
-    var hexData : NSData
-    {
-        return NSData.bytesFromHexString(self)
-    }
 }

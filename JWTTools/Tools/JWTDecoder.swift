@@ -8,6 +8,7 @@
 
 import Foundation
 
+private let kHeaderComponentIndex : Int = 0
 private let kDataComponentIndex : Int = 1
 private let kSignatureComponentIndex : Int = 2
 
@@ -34,19 +35,39 @@ private let kSignatureComponentIndex : Int = 2
         }
     }
     
-    public var decodedValue : NSData?
+    var decodedValue : NSData?
     {
         return NSData(base64EncodedString: dataComponent?.convertFromBase64URLToBase64() ?? "", options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
+    }
+    
+    var message : String?
+    {
+        guard let header = header else
+        {
+            return nil
+        }
+        
+        guard let dataComponent = dataComponent else
+        {
+            return nil
+        }
+        
+        return header + "." + dataComponent
+    }
+    
+    var header : String?
+    {
+        return componentAtIndex(kHeaderComponentIndex)
+    }
+    
+    var dataComponent : String?
+    {
+        return componentAtIndex(kDataComponentIndex)
     }
     
     var signature : String?
     {
         return componentAtIndex(kSignatureComponentIndex)?.convertFromBase64URLToBase64()
-    }
-    
-    var dataComponent : String?
-    {
-        return componentAtIndex(kDataComponentIndex)?.convertFromBase64URLToBase64()
     }
     
     func componentAtIndex(index : Int) -> String?
