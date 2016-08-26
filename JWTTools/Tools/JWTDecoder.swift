@@ -21,23 +21,25 @@ private let kSignatureComponentIndex : Int = 2
         self.tokenString = tokenString
     }
     
+    //MARK: Properties
+    public var decodedHeader : [NSObject : AnyObject]?
+    {
+        return deserializeNullableComponentData(decodedHeaderValue)
+    }
+    
     public var decodedDictionary : [NSObject : AnyObject]?
     {
-        guard let decodedValue = decodedValue else {return nil}
-        
-        do
-        {
-            return try NSJSONSerialization.JSONObjectWithData(decodedValue, options: NSJSONReadingOptions.AllowFragments) as? [NSObject : AnyObject]
-        }
-        catch
-        {
-            return nil
-        }
+        return deserializeNullableComponentData(decodedValue)
+    }
+    
+    var decodedHeaderValue : NSData?
+    {
+        return decodeComponent(header ?? "")
     }
     
     var decodedValue : NSData?
     {
-        return NSData(base64EncodedString: dataComponent?.convertFromBase64URLToBase64() ?? "", options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
+        return decodeComponent(dataComponent ?? "")
     }
     
     var message : String?
@@ -57,17 +59,51 @@ private let kSignatureComponentIndex : Int = 2
     
     var header : String?
     {
-        return componentAtIndex(kHeaderComponentIndex)
+        return convertedComponentAtIndex(kHeaderComponentIndex)
     }
     
     var dataComponent : String?
     {
-        return componentAtIndex(kDataComponentIndex)
+        return convertedComponentAtIndex(kDataComponentIndex)
     }
     
     var signature : String?
     {
-        return componentAtIndex(kSignatureComponentIndex)?.convertFromBase64URLToBase64()
+        return convertedComponentAtIndex(kSignatureComponentIndex)
+    }
+    
+    
+    //MARK: Helpers
+    func deserializeNullableComponentData(data : NSData?) -> [NSObject : AnyObject]?
+    {
+        guard let data = data else
+        {
+            return nil
+        }
+        
+        return deserializeComponentData(data)
+    }
+    
+    func deserializeComponentData(data : NSData) -> [NSObject : AnyObject]?
+    {
+        do
+        {
+            return try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? [NSObject : AnyObject]
+        }
+        catch
+        {
+            return nil
+        }
+    }
+    
+    func decodeComponent(string : String) -> NSData?
+    {
+        return NSData(base64EncodedString: string, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
+    }
+    
+    func convertedComponentAtIndex(index : Int) -> String?
+    {
+        return componentAtIndex(index)?.convertFromBase64URLToBase64()
     }
     
     func componentAtIndex(index : Int) -> String?
