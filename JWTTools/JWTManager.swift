@@ -12,7 +12,7 @@ import Heimdall
 
 public class JWTManager : NSObject
 {
-    let decoder : JWTDecoder
+    public let decoder : JWTDecoder
     
     public init(JWTTokenString : String) {
         
